@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="220" viewBox="0 0 850 220">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#151b28"/>
+    </linearGradient>
+    
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#00C7B7"/>
+    </linearGradient>
+
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00C7B7" stop-opacity="0.05"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Clip Path for Title (HIMANSHU PANDEY) -->
+    <clipPath id="clip-title">
+      <rect x="185" y="32" width="0" height="75">
+        <!-- Starts at 0.4s, types over 1.6s in 8s cycle -->
+        <animate attributeName="width" dur="8s" repeatCount="indefinite" values="0;0;580;580" keyTimes="0;0.05;0.25;1" />
+      </rect>
+    </clipPath>
+    
+    <!-- Clip Path for Subtitle -->
+    <clipPath id="clip-subtitle">
+      <rect x="185" y="112" width="0" height="35">
+        <!-- Starts at 2.2s, types over 1.8s in 8s cycle -->
+        <animate attributeName="width" dur="8s" repeatCount="indefinite" values="0;0;0;580;580" keyTimes="0;0.27;0.28;0.52;1" />
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="850" height="220" fill="url(#bg-grad)" rx="14"/>
+  
+  <!-- Subtle Background Grid -->
+  <g stroke="#6366F1" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="44" x2="850" y2="44"/>
+    <line x1="0" y1="88" x2="850" y2="88"/>
+    <line x1="0" y1="132" x2="850" y2="132"/>
+    <line x1="0" y1="176" x2="850" y2="176"/>
+    <line x1="170" y1="0" x2="170" y2="220"/>
+    <line x1="340" y1="0" x2="340" y2="220"/>
+    <line x1="510" y1="0" x2="510" y2="220"/>
+    <line x1="680" y1="0" x2="680" y2="220"/>
+  </g>
+
+  <!-- Glowing Border -->
+  <rect x="1.5" y="1.5" width="847" height="217" rx="13" fill="none" stroke="url(#accent-grad)" stroke-width="1.5" stroke-opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Left Tech Node / Agent Network Visual -->
+  <g transform="translate(18, 22)">
+    <!-- Outer Orbit Ring -->
+    <circle cx="70" cy="85" r="54" fill="none" stroke="#6366F1" stroke-opacity="0.15" stroke-dasharray="3,3"/>
+    
+    <!-- Connectivity Matrix Lines -->
+    <line x1="70" y1="85" x2="32" y2="42" stroke="#6366F1" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="70" y1="85" x2="115" y2="48" stroke="#00C7B7" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="70" y1="85" x2="38" y2="128" stroke="#00C7B7" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="70" y1="85" x2="110" y2="125" stroke="#6366F1" stroke-opacity="0.35" stroke-width="1.5"/>
+    <line x1="32" y1="42" x2="115" y2="48" stroke="#6366F1" stroke-opacity="0.2" stroke-width="1"/>
+    <line x1="38" y1="128" x2="110" y2="125" stroke="#00C7B7" stroke-opacity="0.2" stroke-width="1"/>
+
+    <!-- Central AI Agent Core Node -->
+    <circle cx="70" cy="85" r="14" fill="#6366F1" fill-opacity="0.2" stroke="#6366F1" stroke-width="2" filter="url(#glow)"/>
+    <circle cx="70" cy="85" r="6" fill="#A5B4FC" filter="url(#glow)">
+      <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Surrounding Nodes -->
+    <circle cx="32" cy="42" r="7" fill="#6366F1" filter="url(#glow)"/>
+    <circle cx="115" cy="48" r="6" fill="#00C7B7" filter="url(#glow)"/>
+    <circle cx="38" cy="128" r="6" fill="#00C7B7" filter="url(#glow)"/>
+    <circle cx="110" cy="125" r="7" fill="#6366F1" filter="url(#glow)"/>
+
+    <!-- Small IoT Pulse Marker -->
+    <circle cx="70" cy="22" r="3" fill="#A5B4FC" opacity="0.8"/>
+    <circle cx="132" cy="85" r="3" fill="#00C7B7" opacity="0.8"/>
+  </g>
+
+  <!-- Header Badge -->
+  <g transform="translate(185, 24)">
+    <rect width="180" height="22" rx="6" fill="url(#badge-grad)" stroke="#6366F1" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="12" cy="11" r="3.5" fill="#00C7B7">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="24" y="15" font-family="'Fira Code', 'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#A5B4FC" letter-spacing="1.5">AI SYSTEMS ARCHITECT</text>
+  </g>
+
+  <!-- Title (HIMANSHU PANDEY) -->
+  <text x="185" y="94" clip-path="url(#clip-title)" font-family="'Fira Code', 'Courier New', monospace" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="4" filter="url(#glow)">HIMANSHU PANDEY</text>
+
+  <!-- Subtitle (FULL STACK ENGINEER • AGENTIC AI • IOT) -->
+  <text x="185" y="132" clip-path="url(#clip-subtitle)" font-family="'Fira Code', 'Courier New', monospace" font-size="15" font-weight="600" fill="#00C7B7" letter-spacing="2.5" filter="url(#soft-glow)">FULL STACK · AGENTIC AI · IOT SYSTEMS</text>
+
+  <!-- Tech Tags Footer Row in Banner -->
+  <g transform="translate(185, 160)">
+    <g transform="translate(0, 0)">
+      <rect width="90" height="24" rx="5" fill="#1e1b4b" stroke="#6366F1" stroke-opacity="0.4"/>
+      <text x="45" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#C7D2FE">React 18</text>
+    </g>
+    <g transform="translate(98, 0)">
+      <rect width="84" height="24" rx="5" fill="#1e1b4b" stroke="#6366F1" stroke-opacity="0.4"/>
+      <text x="42" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#C7D2FE">FastAPI</text>
+    </g>
+    <g transform="translate(190, 0)">
+      <rect width="96" height="24" rx="5" fill="#1e1b4b" stroke="#6366F1" stroke-opacity="0.4"/>
+      <text x="48" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#C7D2FE">Groq SDK</text>
+    </g>
+    <g transform="translate(294, 0)">
+      <rect width="98" height="24" rx="5" fill="#1e1b4b" stroke="#6366F1" stroke-opacity="0.4"/>
+      <text x="49" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#C7D2FE">Breeth MCP</text>
+    </g>
+    <g transform="translate(400, 0)">
+      <rect width="102" height="24" rx="5" fill="#042f2e" stroke="#00C7B7" stroke-opacity="0.4"/>
+      <text x="51" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#5EEAD4">Edge AI / IoT</text>
+    </g>
+    <g transform="translate(510, 0)">
+      <rect width="112" height="24" rx="5" fill="#042f2e" stroke="#00C7B7" stroke-opacity="0.4"/>
+      <text x="56" y="16" text-anchor="middle" font-family="monospace" font-size="11" font-weight="600" fill="#5EEAD4">Team Hexagon</text>
+    </g>
+  </g>
+
+  <!-- Blinking Terminal Cursor -->
+  <rect x="745" y="117" width="9" height="18" fill="#6366F1" filter="url(#glow)">
+    <animate attributeName="opacity" dur="0.9s" values="0;1;0" keyTimes="0;0.5;1" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="480" viewBox="0 0 420 480">
+  <defs>
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Step-by-step typing clip paths -->
+    <clipPath id="l1"><rect x="25" y="55" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.02;0.12;1"/></rect></clipPath>
+    <clipPath id="l2"><rect x="25" y="75" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.08;0.18;1"/></rect></clipPath>
+    <clipPath id="l3"><rect x="25" y="95" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.14;0.24;1"/></rect></clipPath>
+    <clipPath id="l4"><rect x="25" y="115" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.20;0.30;1"/></rect></clipPath>
+    <clipPath id="l5"><rect x="25" y="135" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.26;0.36;1"/></rect></clipPath>
+    <clipPath id="l6"><rect x="25" y="155" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.32;0.42;1"/></rect></clipPath>
+    <clipPath id="l7"><rect x="25" y="175" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.38;0.48;1"/></rect></clipPath>
+    <clipPath id="l8"><rect x="25" y="195" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.44;0.54;1"/></rect></clipPath>
+    <clipPath id="l9"><rect x="25" y="215" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.50;0.60;1"/></rect></clipPath>
+    <clipPath id="l10"><rect x="25" y="235" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.56;0.66;1"/></rect></clipPath>
+    <clipPath id="l11"><rect x="25" y="255" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.62;0.72;1"/></rect></clipPath>
+    <clipPath id="l12"><rect x="25" y="275" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.68;0.78;1"/></rect></clipPath>
+    <clipPath id="l13"><rect x="25" y="295" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.74;0.84;1"/></rect></clipPath>
+    <clipPath id="l14"><rect x="25" y="315" width="0" height="16"><animate attributeName="width" dur="5s" repeatCount="indefinite" values="0;0;370;370" keyTimes="0;0.80;0.90;1"/></rect></clipPath>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect width="420" height="480" rx="12" fill="url(#term-bg)" stroke="#6366F1" stroke-width="1.5" stroke-opacity="0.3"/>
+  
+  <!-- Terminal Header Bar -->
+  <path d="M0 12C0 5.37258 5.37258 0 12 0H408C414.627 0 420 5.37258 420 12V36H0V12Z" fill="#161e2e"/>
+  <circle cx="22" cy="18" r="5" fill="#EF4444"/>
+  <circle cx="38" cy="18" r="5" fill="#F59E0B"/>
+  <circle cx="54" cy="18" r="5" fill="#10B981"/>
+  <text x="210" y="22" text-anchor="middle" font-family="'Fira Code', monospace" font-size="11" fill="#94A3B8">himanshu@architect:~</text>
+
+  <!-- Terminal ASCII Matrix / Portrait Content -->
+  <g font-family="'Fira Code', 'Courier New', monospace" font-size="11.5" font-weight="600" xml:space="preserve">
+    <!-- Prompt -->
+    <text x="25" y="68" clip-path="url(#l1)" fill="#A5B4FC">$ whoami --agent-arch</text>
+    
+    <!-- ASCII Brain / Hexagon Architecture Block -->
+    <text x="25" y="92" clip-path="url(#l2)" fill="#6366F1" filter="url(#neon-glow)">       .---.       .---.       </text>
+    <text x="25" y="112" clip-path="url(#l3)" fill="#6366F1" filter="url(#neon-glow)">      /     \     /     \      </text>
+    <text x="25" y="132" clip-path="url(#l4)" fill="#818CF8">     |   ⚡  |───|   🧠  |     </text>
+    <text x="25" y="152" clip-path="url(#l5)" fill="#818CF8">      \ REACT/     \ GROQ/     </text>
+    <text x="25" y="172" clip-path="url(#l6)" fill="#A5B4FC">    .--`---'--.   .--`---'--.  </text>
+    <text x="25" y="192" clip-path="url(#l7)" fill="#00C7B7" filter="url(#neon-glow)">   /     │     \ /     │     \ </text>
+    <text x="25" y="212" clip-path="url(#l8)" fill="#00C7B7" filter="url(#neon-glow)">  |  🌾 IOT/RAG | | BREETH MCP| </text>
+    <text x="25" y="232" clip-path="url(#l9)" fill="#00C7B7">   \    ARDUINO/   \  PERSIST/  </text>
+    <text x="25" y="252" clip-path="url(#l10)" fill="#6366F1">    `---------'     `-------'   </text>
+    
+    <!-- Profile Info Status Block -->
+    <text x="25" y="285" clip-path="url(#l11)" fill="#E2E8F0">IDENT  :: <tspan fill="#6366F1" font-weight="700">Himanshu Pandey</tspan></text>
+    <text x="25" y="305" clip-path="url(#l12)" fill="#E2E8F0">ALIAS  :: <tspan fill="#00C7B7">@HQHimanshu</tspan></text>
+    <text x="25" y="325" clip-path="url(#l13)" fill="#E2E8F0">TEAMS  :: <tspan fill="#F59E0B">Team Hexagon ⚡ · Terminators 🔥</tspan></text>
+    <text x="25" y="345" clip-path="url(#l14)" fill="#E2E8F0">STATUS :: <tspan fill="#10B981">3 Live Production Apps Shipped 🚀</tspan></text>
+  </g>
+
+  <!-- Bottom Console Status Bar -->
+  <g transform="translate(20, 375)">
+    <rect width="380" height="85" rx="8" fill="#161b26" stroke="#6366F1" stroke-opacity="0.3" stroke-width="1"/>
+    <text x="15" y="26" font-family="'Fira Code', monospace" font-size="11" fill="#A5B4FC">> sys.verify(production_ready)</text>
+    <text x="15" y="48" font-family="'Fira Code', monospace" font-size="11" fill="#00C7B7">✓ Adaptive Interview Agent (Groq + MCP)</text>
+    <text x="15" y="68" font-family="'Fira Code', monospace" font-size="11" fill="#10B981">✓ KrishiDrishti SIH · Smart Clinic · Komi</text>
+  </g>
+</svg>
