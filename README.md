@@ -112,7 +112,7 @@ Frontend  → React 18 · Vite · offline-first PWA
 Alerts    → Twilio WhatsApp/SMS · gTTS voice (Hindi, Marathi, English)
 ```
 
-<details>
+
 <summary><b>System architecture</b></summary>
 <br/>
 
@@ -156,7 +156,7 @@ This was a subsequent extension of the project and **was not part of the origina
                                           ▼
                                       KrishiDrishti System
 ```
-</details>
+
 
 <br/>
 
