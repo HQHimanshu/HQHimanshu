@@ -95,7 +95,9 @@ I build systems at the intersection of **AI, full-stack engineering, and IoT** �
 
 ## Featured Projects
 
-### 🌾 KrishiDrishti — Smart India Hackathon PS-301
+## 🌾 KrishiDrishti
+
+**NeoFuture Hackathon · PS-301 aligned · IoT + AI + Agriculture**
 
 [![Repo](https://img.shields.io/badge/📂_Code-GitHub-0D1117?style=for-the-badge&logo=github)](https://github.com/HQHimanshu/KrishiDrishti)
 [![SIH](https://img.shields.io/badge/🏆_SIH-PS--301_Submission-2ea44f?style=for-the-badge)](https://github.com/HQHimanshu/KrishiDrishti)
@@ -136,7 +138,24 @@ Alerts    → Twilio WhatsApp/SMS · gTTS voice (Hindi, Marathi, English)
 │   Dashboard · AI Chat · Reports — service-worker cached     │
 └──────────────────────────────────────────────────────────┘
 ```
+### 📷 JARVIS 2.0 — ESP32-CAM Extension
 
+KrishiDrishti was later extended for **JARVIS 2.0** with an **ESP32-CAM module**, adding a computer-vision capability to the IoT system.
+
+This was a subsequent extension of the project and **was not part of the original NeoFuture Hackathon implementation**.
+
+```text
+                                      ESP32-CAM
+                                          │
+                                          ▼
+                                      Image Capture
+                                          │
+                                          ▼
+                                      Processing / Analysis
+                                          │
+                                          ▼
+                                      KrishiDrishti System
+```
 </details>
 
 <br/>
@@ -234,24 +253,39 @@ Extracts structured data from resumes using OCR — automation applied to a real
 
 <br/>
 
-## Hackathon Timeline
+## 🧭 Build Journey
 
-```
-  2025 ───────────────────────────────────────────────── 2026
-    │                                                       │
-    ●── 🌾 SIH PS-301                                       │
-    │     KrishiDrishti — IoT + local AI                    │
-    │                                                       │
-    │      ●── ⚡ AbTalks Vibe Coding Hackathon              │
-    │           Adaptive Interview Agent (Team Hexagon)     │
-    │                                                       │
-    │              ●── 🏥 TechBlitz 2026                     │
-    │                   Smart Clinic (Team Terminators)     │
-    │                                                       │
-    │                     ●── 💬 Komi Platform               │
-    │                          (Team Hexagon)                │
-    │                                                       │
-    └───────────────────────────────────────────────────────●  Now
+```text
+                              01  💬 KOMI
+                                  JARVIS Hackathon
+                                  First web/product build
+                                          ↓
+                              02  📄 Resume Extractor
+                                  Hackathon 3X
+                                  Python + Flask + OCR / document processing
+                                          ↓
+                              03  🏥 Smart Clinic
+                                  TechBlitz 2026 · Team Terminators
+                                  Full-stack healthcare / appointment system
+                                          ↓
+                              04  🌾 KrishiDrishti
+                                  NeoFuture Hackathon · PS-301 aligned
+                                  IoT + RAG + Local AI + PWA
+                                          ↓
+                              05  📷 KrishiDrishti Extension
+                                  JARVIS Hackathon
+                                  ESP32-CAM + IoT integration
+                                          ↓
+                              06  🧠 Skills Platform
+                                  Claude Hackathon
+                                  AI / Cloud-based platform
+                                          ↓
+                              07  📊 DSA Arena
+                                  Student DSA statistics platform
+                                          ↓
+                              08  🤖 Adaptive Interview Agent
+                                  ABTalks Vibe Coding Hackathon · Team Hexagon
+                                  LLM + MCP memory + adaptive interviews
 ```
 
 <br/>
